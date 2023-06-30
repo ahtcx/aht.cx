@@ -33,7 +33,6 @@ export default function Home() {
 					<Image
 						className={styles.image}
 						src={transitBoardImage}
-						style={{ objectPosition: "0 35%" }}
 						width={400}
 						sizes="(max-width: 800px) 25vw, 400px"
 						alt=""

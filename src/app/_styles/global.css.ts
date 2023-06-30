@@ -48,6 +48,7 @@ globalStyle(":root", {
 		"(max-width: 800px)": {
 			vars: {
 				[vars.sizing.unit]: "6px",
+				[vars.color.grid]: "rgba(136, 136, 136, 0.25)",
 			},
 		},
 	},
