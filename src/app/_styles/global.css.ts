@@ -1,4 +1,4 @@
-import { assignVars, createThemeContract, globalStyle } from "@vanilla-extract/css";
+import { assignVars, createThemeContract, globalStyle, style } from "@vanilla-extract/css";
 import { calc } from "@vanilla-extract/css-utils";
 import { recipe } from "@vanilla-extract/recipes";
 
@@ -11,6 +11,7 @@ export const vars = createThemeContract({
 	sizing: {
 		unit: null,
 		grid: null,
+		container: null,
 	},
 });
 
@@ -19,11 +20,12 @@ globalStyle(":root", {
 		color: {
 			foreground_rgb: "17,17,17",
 			background_rgb: "238,238,238",
-			grid: "rgba(136, 136, 136, 0.25)",
+			grid: "rgba(136, 136, 136, 0.35)",
 		},
 		sizing: {
 			grid: "1px",
 			unit: "8px",
+			container: "800px",
 		},
 	}),
 
@@ -39,7 +41,7 @@ globalStyle(":root", {
 			vars: assignVars(vars.color, {
 				foreground_rgb: "238,238,238",
 				background_rgb: "17,17,17",
-				grid: "rgba(136, 136, 136, 0.25)",
+				grid: "rgba(136, 136, 136, 0.35)",
 			}),
 			colorScheme: "dark",
 		},

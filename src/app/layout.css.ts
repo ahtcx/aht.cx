@@ -5,7 +5,7 @@ import { item, vars } from "./_styles/global.css";
 export const body = style({
 	display: "grid",
 	gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-	maxWidth: 800,
+	maxWidth: vars.sizing.container,
 	margin: "0 auto",
 });
 
@@ -28,12 +28,10 @@ export const t = style({
 	top: 0,
 	left: 0,
 	pointerEvents: "none",
-
-	padding: "0 6rem",
 });
 
 export const t1 = style({
-	maxWidth: 800,
+	maxWidth: vars.sizing.container,
 	margin: "0 auto",
 	display: "flex",
 	height: "100%",

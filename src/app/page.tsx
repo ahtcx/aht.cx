@@ -6,6 +6,7 @@ import transitBoardImage from "../../public/transitboard.jpg";
 
 import * as styles from "./page.css";
 import * as global_styles from "./_styles/global.css";
+import Horizontal_Line from "./_components/Horizontal_Line";
 
 export default function Home() {
 	return (
@@ -21,10 +22,12 @@ export default function Home() {
 				sizes="(max-width: 800px) 25vw, 400px"
 				alt=""
 			/>
+			<Horizontal_Line />
 			<p className={global_styles.item()}>
 				Welcome to my website! I don’t currently have much use for it other than showcasing some of
 				my projects:
 			</p>
+			<Horizontal_Line />
 			<ul className={styles.display_contents}>
 				<li className={styles.display_contents}>
 					<Image
@@ -42,6 +45,7 @@ export default function Home() {
 							Coming Soon
 						</a>
 					</div>
+					<Horizontal_Line />
 				</li>
 				<li className={styles.display_contents}>
 					<Image
@@ -58,6 +62,7 @@ export default function Home() {
 							Visit Website
 						</a>
 					</div>
+					<Horizontal_Line />
 				</li>
 			</ul>
 			<p className={global_styles.item()}>
