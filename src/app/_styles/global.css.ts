@@ -45,6 +45,11 @@ globalStyle(":root", {
 			}),
 			colorScheme: "dark",
 		},
+		"(max-width: 800px)": {
+			vars: {
+				[vars.sizing.unit]: "6px",
+			},
+		},
 	},
 });
 
@@ -66,7 +71,7 @@ export const item = recipe({
 			},
 		},
 		padded: {
-			true: { margin: "1.5rem" },
+			true: { margin: calc.multiply(vars.sizing.unit, 5) },
 		},
 		width: {
 			half: { gridColumn: "span 2" },
