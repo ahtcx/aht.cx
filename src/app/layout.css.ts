@@ -5,6 +5,7 @@ import { item, vars } from "./_styles/global.css";
 export const body = style({
 	display: "grid",
 	gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+	columnGap: vars.sizing.grid,
 	maxWidth: vars.sizing.container,
 	margin: "0 auto",
 	overflowX: "clip", // TODO: find a better solution :(
