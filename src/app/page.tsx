@@ -39,7 +39,7 @@ export default function Home() {
 						<h2>TransitBoard</h2>
 						<p>Miniature departure boards on your phone.</p>
 						<a href="https://transitboard.app" target="_blank">
-							Website Coming Soon
+							Coming Soon
 						</a>
 					</div>
 				</li>

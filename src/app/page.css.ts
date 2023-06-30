@@ -14,6 +14,7 @@ export const hero = style([
 		"@media": {
 			"(max-width: 800px)": {
 				gridColumn: "span 3",
+				fontSize: "1.25rem",
 			},
 		},
 	},
