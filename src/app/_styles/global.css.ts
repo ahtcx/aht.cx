@@ -50,6 +50,10 @@ globalStyle("p, h1, h2, h3", {
 	margin: 0,
 });
 
+globalStyle("a", {
+	color: "inherit",
+});
+
 export const item = recipe({
 	variants: {
 		flex: {

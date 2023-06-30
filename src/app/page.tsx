@@ -26,7 +26,13 @@ export default function Home() {
 			</p>
 			<ul className={styles.display_contents}>
 				<li className={styles.display_contents}>
-					<Image className={styles.image} src={transitBoardImage} alt="" width={400} />
+					<Image
+						className={styles.image}
+						src={transitBoardImage}
+						style={{ objectPosition: "0 35%" }}
+						alt=""
+						width={400}
+					/>
 					<div className={styles.details}>
 						<h2>TransitBoard</h2>
 						<p>Miniature departure boards on your phone.</p>
@@ -41,7 +47,7 @@ export default function Home() {
 						<h2>Overflowed</h2>
 						<p>Better responsive lists for your apps and websites.</p>
 						<a href="https://overflowed.aht.cx" target="_blank">
-							→ Visit Website
+							Visit Website
 						</a>
 					</div>
 				</li>
