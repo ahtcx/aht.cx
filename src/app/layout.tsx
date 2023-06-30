@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import { Source_Serif_4 } from "next/font/google";
 
 import * as global_styles from "./_styles/global.css";
@@ -7,8 +8,9 @@ import Horizontal_Line from "./_components/Horizontal_Line";
 
 const source_serif_4 = Source_Serif_4({ weight: ["400", "600"], subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "Alexandre Hitchcox",
+	description: "My personal website.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
