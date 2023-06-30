@@ -7,7 +7,7 @@ export const body = style({
 	gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
 	maxWidth: vars.sizing.container,
 	margin: "0 auto",
-	overflowX: 'clip', // TODO: find a better solution :(
+	overflowX: "clip", // TODO: find a better solution :(
 });
 
 export const header = style([
@@ -36,8 +36,13 @@ export const t1 = style({
 	margin: "0 auto",
 	display: "flex",
 	height: "100%",
-	borderLeft: `${vars.sizing.grid} solid ${vars.color.grid}`,
-	borderRight: `${vars.sizing.grid} solid ${vars.color.grid}`,
+
+	"@media": {
+		"(min-width: 800px)": {
+			borderLeft: `${vars.sizing.grid} solid ${vars.color.grid}`,
+			borderRight: `${vars.sizing.grid} solid ${vars.color.grid}`,
+		},
+	},
 });
 
 export const t2 = style({
