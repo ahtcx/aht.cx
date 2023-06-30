@@ -17,8 +17,9 @@ export default function Home() {
 				className={styles.image}
 				src={londonImage}
 				style={{ objectPosition: "0 30%" }}
-				alt=""
 				width={400}
+				sizes="(max-width: 800px) 25vw, 400px"
+				alt=""
 			/>
 			<p className={global_styles.item()}>
 				Welcome to my website! I don’t currently have much use for it other than showcasing some of
@@ -30,8 +31,9 @@ export default function Home() {
 						className={styles.image}
 						src={transitBoardImage}
 						style={{ objectPosition: "0 35%" }}
-						alt=""
 						width={400}
+						sizes="(max-width: 800px) 25vw, 400px"
+						alt=""
 					/>
 					<div className={styles.details}>
 						<h2>TransitBoard</h2>
@@ -42,7 +44,13 @@ export default function Home() {
 					</div>
 				</li>
 				<li className={styles.display_contents}>
-					<Image className={styles.image} src={overflowedImage} alt="" width={400} />
+					<Image
+						className={styles.image}
+						src={overflowedImage}
+						width={400}
+						sizes="(max-width: 800px) 25vw, 400px"
+						alt=""
+					/>
 					<div className={styles.details}>
 						<h2>Overflowed</h2>
 						<p>Better responsive lists for your apps and websites.</p>
