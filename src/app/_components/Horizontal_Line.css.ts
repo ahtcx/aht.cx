@@ -5,7 +5,7 @@ import { calc } from "@vanilla-extract/css-utils";
 
 export const root = style({
 	backgroundColor: vars.color.grid,
-	height: 1,
+	height: vars.sizing.grid,
 	gridColumn: "span 4",
 
 	"@media": {

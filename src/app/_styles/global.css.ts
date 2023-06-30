@@ -69,6 +69,7 @@ export const item = recipe({
 				display: "flex",
 				flexDirection: "column",
 				gap: calc.multiply(vars.sizing.unit, 1.25),
+				alignItems: "start",
 			},
 		},
 		padded: {
